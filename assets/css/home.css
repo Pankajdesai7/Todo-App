@@ -41,3 +41,100 @@ body{
 #description-container:hover{
     background-color: lightgrey;
 }
+#cat-date-outer-cont{
+    width: 100%;
+    height:70px;
+    border-bottom:1px solid grey;
+    /*border-top:1px solid grey;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+#category-cont{
+    width: 49%;
+    height:70px;
+    /*border: 1px solid grey;*/
+}
+#category-dropdown{
+    margin-top:-15px;
+    width: 98%;
+    height: 50%;
+    margin-left:7px;
+    background: transparent;
+    border:none;
+    outline: none;
+}
+#due-date-cont{
+    border-left:1px solid grey;
+    width:49%;
+}
+#due-date-box{
+    margin-top:-15px;
+    width: 98%;
+    height: 50%;
+    margin-left:7px;
+    background: transparent;
+    border:none;
+    outline: none;
+}
+#button-container{
+    width: 100%;
+    height:70px;
+    border-bottom:1px solid grey;
+}
+#add-btn{
+    height: 40px;
+    font-size: 20px;
+    background-color: black;
+    width: 170px;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    margin-left:24%;
+    margin-top:15px;
+}
+#delete-btn{
+    height: 40px;
+    font-size: 18px;
+    background-color:red;
+    width: 170px;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+}
+#list-item-outer-div{
+    width:106%;
+    height:70px;
+    border-bottom:1px solid grey;
+    margin-left:-40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#list-item-outer-div li{
+    list-style: none;
+    font-size: 25px;
+    margin-top:13px;
+}
+#checkbox-div input{
+    margin-top:30px;
+    width: 30px;
+}
+#date-display{
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+#card{
+    
+    height: 40px;
+    width: 100px;
+    background-color: cadetblue;
+    color:whitesmoke;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 15px;
+
+
+}
+#detail-disp{
+    width:78%;
+}

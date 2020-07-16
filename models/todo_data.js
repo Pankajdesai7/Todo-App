@@ -3,15 +3,24 @@ const mongoose=require('mongoose');
 
 //create a schema
 
-const todoSchema = new mongoose.Schema({
+   
+const todoSchema1= new mongoose.Schema({
 
     desp:{
         type:String,
+        required:true
+    },
+    Category:{
+        type:String,
+        required:true
+    },
+    due_date:{
+        type:Date,
         required:true
     }
     
 });
 
-const todo= mongoose.model('todo',todoSchema);
+const todo1= mongoose.model('todo_new',todoSchema1);
 
-module.exports=todo;
+module.exports=todo1;

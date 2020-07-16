@@ -3,6 +3,7 @@
         <title>
            <%= title %>
         </title>
+        <script src="https://kit.fontawesome.com/308b24ef2f.js" crossorigin="anonymous"></script>
        <link rel="stylesheet" href="/css/home.css">
     </head>
     <body>
@@ -14,8 +15,42 @@
                    <p id="desp-head">DESCRIPTION</p>
                    <input  id="desp-box" type="text" name="desp" placeholder="What needs to be done?"> 
                </div>
+               <div id="cat-date-outer-cont">
+                   <div id="category-cont">
+                    <p id="desp-head">CATEGORY</p>
+                    <select name="Category" id="category-dropdown">
+                        <option value="None">Choose a category</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Work">Work</option>
+                        <option value="School">School</option>
+                        <option value="Other">Other</option>
+                      </select>
+                   </div>
+                   <div id="due-date-cont">
+                    <p id="desp-head">Due Date</p>
+                    <input  id="due-date-box" type="date" name="due_date">
+                   </div>
+                   
 
-              </form>
+               </div>
+               <div id="button-container">
+                 <button id="add-btn" type="submit"><i class="fas fa-plus"></i> ADD TASK </button>
+                 <button id="delete-btn"><i class="far fa-trash-alt"></i> DELETE TASK</button>
+               </div>
+
+             </form>
+             <ul>
+             <%for( let i of todolist) {%>
+                    <div id="list-item-outer-div">
+                        <div id="checkbox-div"><input type="checkbox"></div>
+                        <div id="detail-disp"><li> <%= i.desp %> 
+                            <p id="date-display"> <i class="far fa-calendar-alt"></i> <%= i.due_date %></p>
+                        </li>
+                        </div>
+                        <div id="card"> <%= i.Category %> </div>
+                    </div>
+                <%}%>
+             </ul>
         </div>
         
     </body>

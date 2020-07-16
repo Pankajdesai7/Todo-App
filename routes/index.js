@@ -3,11 +3,13 @@ const express=require('express');
 const router=express.Router();
 const homeController=require('../controllers/home_controller');
 
-const todo=require('../models/todo_data');
+const todo1=require('../models/todo_data');
 router.get('/',homeController.home);
 
 router.post('/get-data',function(req,res){
-    todo.create(req.body,function(err,newTodo){
+
+    //console.log(req.body);
+    todo1.create(req.body,function(err,newTodo){
 
         if(err)
         {
