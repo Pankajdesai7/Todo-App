@@ -35,14 +35,14 @@
                </div>
                <div id="button-container">
                  <button id="add-btn" type="submit"><i class="fas fa-plus"></i> ADD TASK </button>
-                 <button id="delete-btn"><i class="far fa-trash-alt"></i> DELETE TASK</button>
+                </form><form action="/delete" method="GET" id="form-2"><button id="delete-btn"><i class="far fa-trash-alt"></i> DELETE TASK</button>
+                  </form>
                </div>
-
-             </form>
+        
              <ul>
              <%for( let i of todolist) {%>
                     <div id="list-item-outer-div">
-                        <div id="checkbox-div"><input type="checkbox"></div>
+                        <div id="checkbox-div"><a href="/get-id/?id=<%= i.id %>"><i class="fas fa-check-square"></i></div></a>
                         <div id="detail-disp"><li> <%= i.desp %> 
                             <p id="date-display"> <i class="far fa-calendar-alt"></i> <%= i.due_date %></p>
                         </li>
